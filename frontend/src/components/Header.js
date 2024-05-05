@@ -35,7 +35,7 @@ export const Header = () => {
           <FaUserAstronaut />
           </div>
 
-          <div className='bg-indigo-600 text-white  px-3 py-1 rounded-full hover:bg-transparent text-black'>
+          <div className='bg-indigo-600 text-yellow-50 px-3 py-1 rounded-full hover:bg-transparent hover:text-black hover:border-2 hover:transition-shadow'>
           <button>Login</button>
         </div>
         </div>
