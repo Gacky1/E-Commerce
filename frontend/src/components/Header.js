@@ -24,13 +24,20 @@ export const Header = () => {
         </div>
 
 
-        <div className='flex items-center gap-4 text-indigo-600'>
-          <div className='text-2xl cursor-pointer'>
-          <FaCartArrowDown/>
+        <div className='flex items-center gap-7'>
+          <div className='text-3xl cursor-pointer relative'>
+          <span><FaCartArrowDown/></span>
+          <div className='bg-indigo-600 text-white w-5 p-1 h-5 flex items-center rounded-full justify-center absolute -top-3 -right-3'>
+            <p className='text-sm'>0</p>
+          </div>
           </div>
           <div className='text-3xl cursor-pointer'>
           <FaUserAstronaut />
           </div>
+
+          <div className='bg-indigo-600 text-white  px-3 py-1 rounded-full hover:bg-transparent text-black'>
+          <button>Login</button>
+        </div>
         </div>
       </div>
     </header>
