@@ -3,16 +3,17 @@ import Logo from './Logo';
 import { FaSearchengin } from "react-icons/fa";
 import { FaUserAstronaut } from "react-icons/fa6";
 import { FaCartArrowDown } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 
 
 
 export const Header = () => {
   return (
-    <header className='h-16 shadow-md'>
+    <header className='h-16 shadow-md bg-white'>
       <div className="h-full container mx-auto flex items-center px-4 justify-between">
         <div className="">
-          <Logo w={100} h={60}/>
+          <Link to={"/"}><Logo w={100} h={60}/></Link>
         </div>
 
 
@@ -35,9 +36,9 @@ export const Header = () => {
           <FaUserAstronaut />
           </div>
 
-          <div className='bg-indigo-600 text-yellow-50 px-3 py-1 rounded-full hover:bg-transparent hover:text-black hover:border-2 hover:transition-shadow'>
-          <button>Login</button>
-        </div>
+          <div >
+              <Link to={"/login"} class="login-button mr-4 ml-3 bg-indigo-600 text-yellow-50 px-3 py-1 rounded-full transition duration-300 ease0-in-out hover:transform hover:bg-transparent hover:text-black hover:border-2 hover:border-indigo-600">Login</Link>
+          </div>
         </div>
       </div>
     </header>
