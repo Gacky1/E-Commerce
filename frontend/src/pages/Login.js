@@ -10,11 +10,11 @@ const Login = () => {
   return (
     <section id='login'>
         <div className='mx-auto container p-4'>
-            <div className='bg-white p-2 py-5 w-full max-w-md mx-auto'>
+            <div className='bg-white p-5 w-full max-w-sm mx-auto'>
                 <div className='h-20 w-20 mx-auto'>
                     <img src={loginIcons} alt='alert-login-icon'/>
                 </div>
-                <form action="">
+                <form action="" className='pt-6'>
                     <div className='grid'>
                         <label htmlFor='email'>Email:</label>
                         <div className='bg-slate-100 p-2'>
@@ -38,8 +38,9 @@ const Login = () => {
                             Forgot password?
                         </Link>
                     </div>
-                    <button type='submit' className='bg-indigo-600 text-white px-6 py-2 w-full max-w-[130px] rounded-full hover:scale-110 transition-all mx-auto block mt-6'>Login</button>
+                    <button type='submit' className='bg-indigo-600 hover:bg-transparent hover:text-indigo-600 hover:border-2 hover:border-indigo-600 text-white px-6 py-2 w-full max-w-[130px] rounded-full hover:scale-110 transition-all mx-auto block mt-6'>Login</button>
                 </form>
+                <p className='my-5'>Don't have an account? <Link to={"/sign-up"} className=' text-red-600 hover:text-red-500 hover:underline'> Sign up. </Link></p>
             </div>
         </div>
     </section>
